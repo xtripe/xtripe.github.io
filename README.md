@@ -46,3 +46,10 @@ shipped_image: http://f.oo/foo.jpg # Preview image (e.g. screenshot)
 ## Done!
 
 Note that shipped items will display in a shuffled order, not by date or name or anything like that. This is so everyone gets a chance to be above the fold. 🥳
+
+## Run it locally:
+
+```
+$ bundle install
+$ bundle exec jekyll serve
+```
