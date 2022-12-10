@@ -1,0 +1,13 @@
+title: xtripe ship log
+description: >-
+  Things shipped by Stripe alumni
+baseurl: ""
+url: "https://xtripe.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  shipped:
+    output: true

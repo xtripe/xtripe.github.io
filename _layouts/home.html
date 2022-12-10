@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.shipped.size > 0 -%}
+    <ul class="post-list">
+      {%- for post in site.shipped -%}
+      <li>
+
+        <a href="{{ post.shipped_link }}">
+
+          {%- if post.shipped_image -%}
+            <div class="post-img">
+              <div style="background-image: url('{{post.shipped_image}}');"></div>
+            </div>
+          {%- else -%}
+            <div class="post-img"><div></div></div>
+          {%- endif -%}
+
+          <h3>
+            {{ post.shipped_title | escape | truncate: 100, "…" }}
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+
+        </a>
+
+        <small class="post-from">
+          <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ post.date | date: date_format }}
+          </time>
+
+          From:{{' '}}
+          {%- if post.my_url -%}
+            <a href="{{post.my_url}}">{{post.my_name}}</a>
+          {%- else -%}
+            {{post.my_name}}
+          {%- endif -%}
+        </small>
+      </li>
+      {%- endfor -%}
+      <li style="">
+
+        <a href="https://github.com/xtripe/xtripe.github.io">
+
+            <div class="post-img">
+              <div style="background-image: url('/assets/shipped/hmm.png');"></div>
+            </div>
+
+          <h3>
+            Add something you made 🙏 Click for instructions 📖
+          </h3>
+        </a>
+
+        <small class="post-from" style="text-align: center; font-weight: bold; font-size: .8em">
+
+          NB: Just one shipped thing per xtripe please
+        </small>
+      </li>
+    </ul>
+
+    <script>
+      [...document.querySelectorAll('li')].slice(0, -1).sort(() => {
+        return Math.random() - .5
+      }).forEach(l =>
+        l.parentNode.insertBefore(l, l.parentNode.firstChild)
+      );
+    </script>
+
+    
+  {%- endif -%}
+
+</div>
