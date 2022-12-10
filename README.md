@@ -29,6 +29,8 @@ shipped_image: http://f.oo/foo.jpg # Preview image (e.g. screenshot)
 ---
 ```
 
+(make sure you include the `---` at the top and bottom of the file.)
+
 > <img src="https://xtripe.github.io/assets/other/instruction2.png" width="400px" />
 
 3. Scroll down and add a title and optional description for your PR and click `Propose new file`.
