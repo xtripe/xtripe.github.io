@@ -12,7 +12,7 @@ Hello fellow ex-stripes. This is a place for us to share we've shipped and wish 
 1. Create a new file under `_shipped/` with the name of `{first_initial}{surname}` like /jpadolsey/. [Click here to do this](https://github.com/xtripe/xtripe.github.io/new/main/_shipped/).
 
 
-![First instruction](https://github.io/assets/other/instruction1.png)
+![First instruction](https://xtripe.github.io/assets/other/instruction1.png)
 
 
 2. Copy/Paste the following into the file and fill in these fields as appropriate:
@@ -27,15 +27,15 @@ shipped_image: http://f.oo/foo.jpg # Preview image (e.g. screenshot)
 ---
 ```
 
-![Second instruction](https://github.io/assets/other/instruction2.png)
+![Second instruction](https://xtripe.github.io/assets/other/instruction2.png)
 
 3. Scroll down and add a title and optional description for your PR and click `Propose new file`.
 
-![Third instruction](https://github.io/assets/other/instruction3.png)
+![Third instruction](https://xtripe.github.io/assets/other/instruction3.png)
 
 4. When you are happy with the changes you've proposed, click `Create pull request`.
 
-![Fourth instruction](https://github.io/assets/other/instruction4.png)
+![Fourth instruction](https://xtripe.github.io/assets/other/instruction4.png)
 
 5. When you have a link to your PR, please DM me on the **xtripe slack chat** (`James Padolsey`) with a link to the PR. I can then confirm who you are and merge the PR, putting your shipped thing live! ☺️
 
