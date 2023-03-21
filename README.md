@@ -21,9 +21,9 @@ Hello fellow ex-stripes. This is a place for us to share things we've shipped (p
 
 ```yaml
 ---
-my_name: Your Human Name Here      # Your name as you wish it to appear
+my_name: "Your Human Name Here"    # Your name as you wish it to appear
 my_url: http://example.org         # Optional personal URL (e.g. twitter)
-shipped_title:  Title...           # Ideally less than 100 characters
+shipped_title:  "Title..."         # Ideally less than 100 characters
 shipped_link: http://f.oo          # The URL of the shipped thing
 shipped_image: http://f.oo/foo.jpg # Preview image (e.g. screenshot)
 ---
